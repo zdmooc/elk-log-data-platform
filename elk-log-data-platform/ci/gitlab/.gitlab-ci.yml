@@ -1,0 +1,13 @@
+stages: [lint, test]
+
+lint:
+  image: python:3.11-slim
+  script:
+    - pip install -r pipelines/requirements.txt
+    - make lint
+
+test:
+  image: python:3.11-slim
+  script:
+    - pip install -r pipelines/requirements.txt
+    - make test

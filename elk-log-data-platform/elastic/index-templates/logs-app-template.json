@@ -1,0 +1,62 @@
+{
+  "index_patterns": [
+    "logs.app-*"
+  ],
+  "template": {
+    "settings": {
+      "number_of_shards": 1,
+      "index.lifecycle.name": "logs-hot-warm-cold"
+    },
+    "mappings": {
+      "dynamic": true,
+      "properties": {
+        "@timestamp": {
+          "type": "date"
+        },
+        "message": {
+          "type": "text"
+        },
+        "log": {
+          "properties": {
+            "level": {
+              "type": "keyword"
+            }
+          }
+        },
+        "service": {
+          "properties": {
+            "name": {
+              "type": "keyword"
+            },
+            "environment": {
+              "type": "keyword"
+            }
+          }
+        },
+        "event": {
+          "properties": {
+            "dataset": {
+              "type": "keyword"
+            },
+            "kind": {
+              "type": "keyword"
+            }
+          }
+        },
+        "trace": {
+          "properties": {
+            "id": {
+              "type": "keyword"
+            }
+          }
+        }
+      }
+    }
+  },
+  "priority": 200,
+  "_meta": {
+    "managed_by": "repo",
+    "template_name": "logs-app-template",
+    "created": "2025-12-21"
+  }
+}

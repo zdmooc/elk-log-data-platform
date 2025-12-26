@@ -1,0 +1,11 @@
+datasets:
+  - name: logs.app.demo
+    required_fields:
+      - "@timestamp"
+      - "message"
+      - "log.level"
+      - "service.name"
+      - "service.environment"
+    max_ingestion_latency_sec_p95: 60
+    min_required_fields_rate: 0.98
+    min_parsing_ok_rate: 0.99

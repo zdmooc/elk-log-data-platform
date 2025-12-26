@@ -1,0 +1,4 @@
+- pipeline.id: kafka_to_es
+  path.config: "/usr/share/logstash/pipeline/*.conf"
+  pipeline.workers: 1
+  pipeline.batch.size: 125

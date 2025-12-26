@@ -1,0 +1,2 @@
+{"type": "index-pattern", "id": "logs-app-demo-pattern", "attributes": {"title": "logs.app.demo-*", "timeFieldName": "@timestamp"}}
+{"type": "dashboard", "id": "demo-observability", "attributes": {"title": "Demo Observability", "description": "Dashboard de d\u00e9monstration (squelette).", "panelsJSON": "[]", "optionsJSON": "{}", "timeRestore": false}}
