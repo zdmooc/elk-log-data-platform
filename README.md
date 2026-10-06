@@ -2,6 +2,14 @@
 
 Ce dépôt est un **projet "prêt à cadrer"** pour un Grand-Compte visant la **refonte de l’offre logs** (applicatifs, systèmes, réseau, sécurité) avec une approche **data & métiers** (et non “infra-only”).
 
+## D-098 — OpenShift CaaS logging contribution
+
+For the SQY mission this repository provides the specialist logging/search/correlation pattern only.
+It does not become the owner of all platform observability.
+
+Mission mapping:
+- `docs/06-d098-openshift-caas-logging.md`.
+
 ## Objectifs
 - Industrialiser la chaîne **collecte → transformation → stockage → restitution**.
 - Passer à une offre **standardisée, gouvernée, exploitable** (qualité, traçabilité, contrats).
